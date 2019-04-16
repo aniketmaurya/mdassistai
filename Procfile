@@ -1,1 +1,2 @@
-python main.py
+postdeploy: python main.py
+
