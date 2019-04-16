@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+<div id="content">
+            <!--Main banner image-->
+            <div id = "banner_image">
+                <div class="container">	
+                    <center>
+                        <div id="banner_content">
+                            <h1>Upload Histopathologic image</h1>
+                            <p>* In .jpg or .png fomat * </p>
+                            <br/>
+                            <a  href="#" class="btn btn-info btn-lg active">
+                                <form method=post enctype=multipart/form-data action="{{ url_for('upload_file') }}">
+                                <input type=file name=file>
+                                <input type=submit value=Upload class="btn btn-success">
+                              </form></a>
+                        </div>
+                    </center>
+                </div>
+            </div>
+            <!--Main banner image end-->
+
+            <!--Item categories listing-->
+            <div class="container">
+                <div class="row text-center" id="item_list">
+                    <div class="col-sm-4">
+                        <a href="products.html#cameras" >
+                            <div class="thumbnail">
+                                <img src="img/1.jpg" alt="">
+                                <div class="caption">
+                                    <h3>Chest Pneumonia detection</h3>
+                                    <p>AI.</p>
+                                </div>
+                            </div> 
+                        </a>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <a href="products.html#watches" >
+                            <div class="thumbnail">
+                                <img src="img/10.jpg" alt="">
+                                <div class="caption">
+                                    <h3>Breast Cancer detection</h3>
+                                    <p>AI</p>
+                                </div>
+                            </div> 
+                        </a>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <a href="products.html#shirts" >
+                            <div class="thumbnail">
+                                <img src="img/13.jpg" alt="">
+                                <div class="caption">
+                                    <h3>Bone defect detection</h3>
+                                    <p>DL</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--Item categories listing end-->
+</div>
+{% endblock content %}

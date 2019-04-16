@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+<div id="content">
+{% block content %}
+
+
+<div class="container">
+    <div class="jumbotron">
+        <center><h3 class="text text-success">Thank you for using MDassistAI!</h3></center>
+        <p>Our AI analysis diagnosed you</p>
+        {% if cat=='0' %}
+            <p class="text text-success h4"> Not Cancer with {{ prob[0]*100 }}% Probability </p>
+        {% else %}
+            <p class="text text-warning"><b>Cancer with {{ prob[1]*100 }}% probability</b> </p>        
+
+        {% endif %}
+    </div>
+    
+
+
+
+
+
+</div>
+
+
+
+</br>
+</div>
+{% endblock content %}

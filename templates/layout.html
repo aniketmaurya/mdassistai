@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Welcome | MDassistAI</title>
+        <!-- Bootstrap Core CSS -->
+        <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+        <!-- jQuery -->
+        <script src="{{ url_for('static', filename='js/js/jquery.js') }}"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    </head>
+
+    <body style="padding-top: 50px;">
+        <!-- Header -->
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="{{ url_for('home') }}">MDassistAI</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="{{ url_for('login') }}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="{{ url_for('login') }}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <!--Content-->
+    {% block content %} {% endblock content %}
+
+
+
+        <!--Footer-->
+        <footer>
+            <div class="container">
+                <center>
+                    <div> Twitter: https://twitter.com/mdassistai </div> <div>Email: ai.mdassist@gmail.com</div>
+                    <p>LinkedIn: https://linkedin.com/company/mdassistai</p>
+                </center>
+            </div>
+        </footer>
+        <!--Footer end-->
