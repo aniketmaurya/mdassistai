@@ -1,0 +1,4 @@
+fastai
+pandas
+flask
+flask-wtf
