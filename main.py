@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from flask import Flask, render_template, url_for, redirect, request, flash
-import os
+import os, gc
 from werkzeug.utils import secure_filename
 
 UPLOAD_FOLDER = 'img/'
@@ -62,7 +62,6 @@ def upload_file():
     </form>
     '''
 
-import gc
 gc.collect()
 
 
