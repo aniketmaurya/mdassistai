@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from flask import Flask, render_template, url_for, redirect, request, flash
 import os
 from werkzeug.utils import secure_filename
@@ -65,4 +67,4 @@ gc.collect()
 
 
 if __name__ == "__main__":
-    app.run(debug=False, port = 8099)
+    app.run(debug=True, port = 8099)
