@@ -67,4 +67,4 @@ gc.collect()
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port = 8099)
+    app.run(debug=True)
