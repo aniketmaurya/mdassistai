@@ -1,4 +1,5 @@
-fastai
 pandas
 flask
 flask-wtf
+fastai==1.0.59
+torch==1.3.0
